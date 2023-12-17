@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: #13162b;
+  display: grid;
+  place-items: center;
+}
+.container {
+  position: relative;
+  width: 80vmin;
+  background-color: #191c37;
+  padding: 100px 30px;
+  border-radius: 9px;
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
+}
+.container:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  height: 120%;
+  bottom: -10%;
+  background-color: #ce1340;
+  z-index: -1;
+  border-radius: 8px;
+}
+h1 {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 80px;
+  color: #ffffff;
+}
+
+.btnsSection {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+button.kam,
+button.por {
+  background-color: #ce1340;
+  color: #fff;
+}
+.btnsSection button {
+  width: 150px;
+  border: none;
+  outline: none;
+  padding: 15px 0;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.pak {
+  background-color: transparent;
+  color: #ce1340;
+  border: solid 3px #ce1340;
+}
